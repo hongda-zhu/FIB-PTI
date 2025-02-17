@@ -1,641 +1,3 @@
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
-16-Feb-2025 23:55:09.330 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.0.10
-16-Feb-2025 23:55:09.334 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 30 2021 09:51:27 UTC
-16-Feb-2025 23:55:09.334 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.0.10.0
-16-Feb-2025 23:55:09.334 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
-16-Feb-2025 23:55:09.334 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.15.0-92-generic
-16-Feb-2025 23:55:09.334 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
-16-Feb-2025 23:55:09.334 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
-16-Feb-2025 23:55:09.334 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.26+4-post-Ubuntu-1ubuntu122.04
-16-Feb-2025 23:55:09.334 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
-16-Feb-2025 23:55:09.334 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10
-16-Feb-2025 23:55:09.334 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10
-16-Feb-2025 23:55:09.389 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
-16-Feb-2025 23:55:09.389 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
-16-Feb-2025 23:55:09.390 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
-16-Feb-2025 23:55:09.390 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
-16-Feb-2025 23:55:09.390 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
-16-Feb-2025 23:55:09.390 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10/conf/logging.properties
-16-Feb-2025 23:55:09.390 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
-16-Feb-2025 23:55:09.391 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
-16-Feb-2025 23:55:09.391 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
-16-Feb-2025 23:55:09.391 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
-16-Feb-2025 23:55:09.391 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
-16-Feb-2025 23:55:09.391 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10
-16-Feb-2025 23:55:09.391 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10
-16-Feb-2025 23:55:09.392 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10/temp
-16-Feb-2025 23:55:09.396 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/home/alumne/catkin_ws/devel/lib:/opt/ros/noetic/lib:/tmp/.mount_cursorOBo52b/usr/lib:/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
-16-Feb-2025 23:55:09.694 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
-16-Feb-2025 23:55:09.719 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [813] milliseconds
-16-Feb-2025 23:55:09.767 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
-16-Feb-2025 23:55:09.767 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.0.10]
-16-Feb-2025 23:55:09.773 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/host-manager]
-16-Feb-2025 23:55:10.141 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-16-Feb-2025 23:55:10.209 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/host-manager] has finished in [435] ms
-16-Feb-2025 23:55:10.209 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/ROOT]
-16-Feb-2025 23:55:10.288 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-16-Feb-2025 23:55:10.290 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/ROOT] has finished in [81] ms
-16-Feb-2025 23:55:10.290 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/my_webapp]
-16-Feb-2025 23:55:10.335 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-16-Feb-2025 23:55:10.340 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/my_webapp] has finished in [50] ms
-16-Feb-2025 23:55:10.340 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/manager]
-16-Feb-2025 23:55:10.362 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-16-Feb-2025 23:55:10.365 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/manager] has finished in [25] ms
-16-Feb-2025 23:55:10.365 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/docs]
-16-Feb-2025 23:55:10.380 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-16-Feb-2025 23:55:10.381 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/docs] has finished in [16] ms
-16-Feb-2025 23:55:10.381 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/examples]
-16-Feb-2025 23:55:10.708 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-16-Feb-2025 23:55:10.771 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/examples] has finished in [389] ms
-16-Feb-2025 23:55:10.780 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
-16-Feb-2025 23:55:10.820 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1100] milliseconds
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
-16-Feb-2025 23:55:45.250 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.0.10
-16-Feb-2025 23:55:45.256 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 30 2021 09:51:27 UTC
-16-Feb-2025 23:55:45.256 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.0.10.0
-16-Feb-2025 23:55:45.256 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
-16-Feb-2025 23:55:45.256 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.15.0-92-generic
-16-Feb-2025 23:55:45.256 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
-16-Feb-2025 23:55:45.256 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
-16-Feb-2025 23:55:45.257 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.26+4-post-Ubuntu-1ubuntu122.04
-16-Feb-2025 23:55:45.257 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
-16-Feb-2025 23:55:45.257 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10
-16-Feb-2025 23:55:45.257 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10
-16-Feb-2025 23:55:45.266 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
-16-Feb-2025 23:55:45.266 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
-16-Feb-2025 23:55:45.266 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
-16-Feb-2025 23:55:45.267 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
-16-Feb-2025 23:55:45.267 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
-16-Feb-2025 23:55:45.267 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10/conf/logging.properties
-16-Feb-2025 23:55:45.267 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
-16-Feb-2025 23:55:45.267 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
-16-Feb-2025 23:55:45.267 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
-16-Feb-2025 23:55:45.271 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
-16-Feb-2025 23:55:45.271 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
-16-Feb-2025 23:55:45.272 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10
-16-Feb-2025 23:55:45.272 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10
-16-Feb-2025 23:55:45.272 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10/temp
-16-Feb-2025 23:55:45.273 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/home/alumne/catkin_ws/devel/lib:/opt/ros/noetic/lib:/tmp/.mount_cursorOBo52b/usr/lib:/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
-16-Feb-2025 23:55:45.474 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
-16-Feb-2025 23:55:45.486 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector[HTTP/1.1-8080]]
-	org.apache.catalina.LifecycleException: Protocol handler initialization failed
-		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1054)
-		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
-		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:556)
-		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
-		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1042)
-		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
-		at org.apache.catalina.startup.Catalina.load(Catalina.java:747)
-		at org.apache.catalina.startup.Catalina.load(Catalina.java:769)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:305)
-		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:475)
-	Caused by: java.net.BindException: Address already in use
-		at java.base/sun.nio.ch.Net.bind0(Native Method)
-		at java.base/sun.nio.ch.Net.bind(Net.java:459)
-		at java.base/sun.nio.ch.Net.bind(Net.java:448)
-		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
-		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:242)
-		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:197)
-		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1179)
-		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1192)
-		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:580)
-		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:82)
-		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1051)
-		... 13 more
-16-Feb-2025 23:55:45.489 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [382] milliseconds
-16-Feb-2025 23:55:45.530 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
-16-Feb-2025 23:55:45.531 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.0.10]
-16-Feb-2025 23:55:45.550 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/host-manager]
-16-Feb-2025 23:55:45.711 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-16-Feb-2025 23:55:45.747 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/host-manager] has finished in [196] ms
-16-Feb-2025 23:55:45.747 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/ROOT]
-16-Feb-2025 23:55:45.762 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-16-Feb-2025 23:55:45.763 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/ROOT] has finished in [16] ms
-16-Feb-2025 23:55:45.763 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/my_webapp]
-16-Feb-2025 23:55:45.810 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-16-Feb-2025 23:55:45.830 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/my_webapp] has finished in [66] ms
-16-Feb-2025 23:55:45.830 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/manager]
-16-Feb-2025 23:55:45.846 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-16-Feb-2025 23:55:45.847 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/manager] has finished in [17] ms
-16-Feb-2025 23:55:45.848 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/docs]
-16-Feb-2025 23:55:45.860 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-16-Feb-2025 23:55:45.861 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/docs] has finished in [13] ms
-16-Feb-2025 23:55:45.861 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/examples]
-16-Feb-2025 23:55:45.984 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-16-Feb-2025 23:55:46.005 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/examples] has finished in [144] ms
-16-Feb-2025 23:55:46.018 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [529] milliseconds
-16-Feb-2025 23:55:46.021 SEVERE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
-	java.net.BindException: Address already in use (Bind failed)
-		at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
-		at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:452)
-		at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
-		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
-		at org.apache.catalina.core.StandardServer.await(StandardServer.java:577)
-		at org.apache.catalina.startup.Catalina.await(Catalina.java:887)
-		at org.apache.catalina.startup.Catalina.start(Catalina.java:833)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
-		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
-16-Feb-2025 23:55:46.021 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
-16-Feb-2025 23:55:46.021 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
-16-Feb-2025 23:55:46.027 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Failed to clear soft references from ObjectStreamClass$Caches for web application [ROOT]
-	java.lang.ClassCastException: class java.io.ObjectStreamClass$Caches$1 cannot be cast to class java.util.Map (java.io.ObjectStreamClass$Caches$1 and java.util.Map are in module java.base of loader 'bootstrap')
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearCache(WebappClassLoaderBase.java:2363)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches(WebappClassLoaderBase.java:2338)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1706)
-		at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1634)
-		at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:429)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5464)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1401)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
-		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:986)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1401)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
-		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:986)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:497)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:979)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.startup.Catalina.stop(Catalina.java:872)
-		at org.apache.catalina.startup.Catalina.start(Catalina.java:834)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
-		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
-16-Feb-2025 23:55:46.037 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Failed to clear soft references from ObjectStreamClass$Caches for web application [examples]
-	java.lang.ClassCastException: class java.io.ObjectStreamClass$Caches$1 cannot be cast to class java.util.Map (java.io.ObjectStreamClass$Caches$1 and java.util.Map are in module java.base of loader 'bootstrap')
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearCache(WebappClassLoaderBase.java:2363)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches(WebappClassLoaderBase.java:2338)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1706)
-		at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1634)
-		at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:429)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5464)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1401)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
-		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:986)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1401)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
-		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:986)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:497)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:979)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.startup.Catalina.stop(Catalina.java:872)
-		at org.apache.catalina.startup.Catalina.start(Catalina.java:834)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
-		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
-16-Feb-2025 23:55:46.039 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Failed to clear soft references from ObjectStreamClass$Caches for web application [host-manager]
-	java.lang.ClassCastException: class java.io.ObjectStreamClass$Caches$1 cannot be cast to class java.util.Map (java.io.ObjectStreamClass$Caches$1 and java.util.Map are in module java.base of loader 'bootstrap')
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearCache(WebappClassLoaderBase.java:2363)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches(WebappClassLoaderBase.java:2338)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1706)
-		at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1634)
-		at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:429)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5464)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1401)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
-		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:986)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1401)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
-		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:986)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:497)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:979)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.startup.Catalina.stop(Catalina.java:872)
-		at org.apache.catalina.startup.Catalina.start(Catalina.java:834)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
-		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
-16-Feb-2025 23:55:46.040 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Failed to clear soft references from ObjectStreamClass$Caches for web application [my_webapp]
-	java.lang.ClassCastException: class java.io.ObjectStreamClass$Caches$1 cannot be cast to class java.util.Map (java.io.ObjectStreamClass$Caches$1 and java.util.Map are in module java.base of loader 'bootstrap')
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearCache(WebappClassLoaderBase.java:2363)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches(WebappClassLoaderBase.java:2338)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1706)
-		at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1634)
-		at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:429)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5464)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1401)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
-		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:986)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1401)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
-		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:986)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:497)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:979)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.startup.Catalina.stop(Catalina.java:872)
-		at org.apache.catalina.startup.Catalina.start(Catalina.java:834)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
-		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
-16-Feb-2025 23:55:46.042 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Failed to clear soft references from ObjectStreamClass$Caches for web application [manager]
-	java.lang.ClassCastException: class java.io.ObjectStreamClass$Caches$1 cannot be cast to class java.util.Map (java.io.ObjectStreamClass$Caches$1 and java.util.Map are in module java.base of loader 'bootstrap')
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearCache(WebappClassLoaderBase.java:2363)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches(WebappClassLoaderBase.java:2338)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1706)
-		at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1634)
-		at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:429)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5464)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1401)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
-		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:986)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1401)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
-		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:986)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:497)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:979)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.startup.Catalina.stop(Catalina.java:872)
-		at org.apache.catalina.startup.Catalina.start(Catalina.java:834)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
-		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
-16-Feb-2025 23:55:46.043 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Failed to clear soft references from ObjectStreamClass$Caches for web application [docs]
-	java.lang.ClassCastException: class java.io.ObjectStreamClass$Caches$1 cannot be cast to class java.util.Map (java.io.ObjectStreamClass$Caches$1 and java.util.Map are in module java.base of loader 'bootstrap')
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearCache(WebappClassLoaderBase.java:2363)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches(WebappClassLoaderBase.java:2338)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1706)
-		at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1634)
-		at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:429)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5464)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1401)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
-		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:986)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1401)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
-		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:986)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:497)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:979)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.startup.Catalina.stop(Catalina.java:872)
-		at org.apache.catalina.startup.Catalina.start(Catalina.java:834)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
-		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
-16-Feb-2025 23:55:46.044 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
-16-Feb-2025 23:55:46.045 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-16-Feb-2025 23:55:48.165 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
-16-Feb-2025 23:55:48.166 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
-16-Feb-2025 23:55:48.183 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
-16-Feb-2025 23:55:48.189 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Failed to clear soft references from ObjectStreamClass$Caches for web application [ROOT]
-	java.lang.ClassCastException: class java.io.ObjectStreamClass$Caches$1 cannot be cast to class java.util.Map (java.io.ObjectStreamClass$Caches$1 and java.util.Map are in module java.base of loader 'bootstrap')
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearCache(WebappClassLoaderBase.java:2363)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches(WebappClassLoaderBase.java:2338)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1706)
-		at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1634)
-		at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:429)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5464)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1401)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
-		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:986)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1401)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
-		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:986)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:497)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:979)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.startup.Catalina.stop(Catalina.java:872)
-		at org.apache.catalina.startup.Catalina.start(Catalina.java:834)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
-		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
-16-Feb-2025 23:55:48.197 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Failed to clear soft references from ObjectStreamClass$Caches for web application [examples]
-	java.lang.ClassCastException: class java.io.ObjectStreamClass$Caches$1 cannot be cast to class java.util.Map (java.io.ObjectStreamClass$Caches$1 and java.util.Map are in module java.base of loader 'bootstrap')
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearCache(WebappClassLoaderBase.java:2363)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches(WebappClassLoaderBase.java:2338)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1706)
-		at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1634)
-		at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:429)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5464)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1401)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
-		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:986)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1401)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
-		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:986)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:497)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:979)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.startup.Catalina.stop(Catalina.java:872)
-		at org.apache.catalina.startup.Catalina.start(Catalina.java:834)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
-		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
-16-Feb-2025 23:55:48.200 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Failed to clear soft references from ObjectStreamClass$Caches for web application [host-manager]
-	java.lang.ClassCastException: class java.io.ObjectStreamClass$Caches$1 cannot be cast to class java.util.Map (java.io.ObjectStreamClass$Caches$1 and java.util.Map are in module java.base of loader 'bootstrap')
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearCache(WebappClassLoaderBase.java:2363)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches(WebappClassLoaderBase.java:2338)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1706)
-		at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1634)
-		at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:429)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5464)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1401)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
-		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:986)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1401)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
-		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:986)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:497)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:979)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.startup.Catalina.stop(Catalina.java:872)
-		at org.apache.catalina.startup.Catalina.start(Catalina.java:834)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
-		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
-16-Feb-2025 23:55:48.203 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Failed to clear soft references from ObjectStreamClass$Caches for web application [my_webapp]
-	java.lang.ClassCastException: class java.io.ObjectStreamClass$Caches$1 cannot be cast to class java.util.Map (java.io.ObjectStreamClass$Caches$1 and java.util.Map are in module java.base of loader 'bootstrap')
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearCache(WebappClassLoaderBase.java:2363)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches(WebappClassLoaderBase.java:2338)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1706)
-		at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1634)
-		at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:429)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5464)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1401)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
-		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:986)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1401)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
-		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:986)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:497)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:979)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.startup.Catalina.stop(Catalina.java:872)
-		at org.apache.catalina.startup.Catalina.start(Catalina.java:834)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
-		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
-16-Feb-2025 23:55:48.205 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Failed to clear soft references from ObjectStreamClass$Caches for web application [manager]
-	java.lang.ClassCastException: class java.io.ObjectStreamClass$Caches$1 cannot be cast to class java.util.Map (java.io.ObjectStreamClass$Caches$1 and java.util.Map are in module java.base of loader 'bootstrap')
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearCache(WebappClassLoaderBase.java:2363)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches(WebappClassLoaderBase.java:2338)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1706)
-		at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1634)
-		at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:429)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5464)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1401)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
-		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:986)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1401)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
-		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:986)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:497)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:979)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.startup.Catalina.stop(Catalina.java:872)
-		at org.apache.catalina.startup.Catalina.start(Catalina.java:834)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
-		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
-16-Feb-2025 23:55:48.208 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Failed to clear soft references from ObjectStreamClass$Caches for web application [docs]
-	java.lang.ClassCastException: class java.io.ObjectStreamClass$Caches$1 cannot be cast to class java.util.Map (java.io.ObjectStreamClass$Caches$1 and java.util.Map are in module java.base of loader 'bootstrap')
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearCache(WebappClassLoaderBase.java:2363)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches(WebappClassLoaderBase.java:2338)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1706)
-		at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1634)
-		at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:429)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5464)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1401)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
-		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:986)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1401)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
-		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:986)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:497)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:979)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.startup.Catalina.stop(Catalina.java:872)
-		at org.apache.catalina.startup.Catalina.start(Catalina.java:834)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
-		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
-16-Feb-2025 23:55:48.208 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
-16-Feb-2025 23:55:48.230 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
-16-Feb-2025 23:55:50.182 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.0.10
-16-Feb-2025 23:55:50.187 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 30 2021 09:51:27 UTC
-16-Feb-2025 23:55:50.187 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.0.10.0
-16-Feb-2025 23:55:50.187 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
-16-Feb-2025 23:55:50.188 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.15.0-92-generic
-16-Feb-2025 23:55:50.188 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
-16-Feb-2025 23:55:50.188 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
-16-Feb-2025 23:55:50.189 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.26+4-post-Ubuntu-1ubuntu122.04
-16-Feb-2025 23:55:50.189 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
-16-Feb-2025 23:55:50.189 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10
-16-Feb-2025 23:55:50.189 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10
-16-Feb-2025 23:55:50.198 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
-16-Feb-2025 23:55:50.198 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
-16-Feb-2025 23:55:50.198 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
-16-Feb-2025 23:55:50.198 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
-16-Feb-2025 23:55:50.199 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
-16-Feb-2025 23:55:50.199 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10/conf/logging.properties
-16-Feb-2025 23:55:50.199 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
-16-Feb-2025 23:55:50.199 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
-16-Feb-2025 23:55:50.199 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
-16-Feb-2025 23:55:50.199 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
-16-Feb-2025 23:55:50.199 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
-16-Feb-2025 23:55:50.199 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10
-16-Feb-2025 23:55:50.199 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10
-16-Feb-2025 23:55:50.199 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10/temp
-16-Feb-2025 23:55:50.201 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/home/alumne/catkin_ws/devel/lib:/opt/ros/noetic/lib:/tmp/.mount_cursorOBo52b/usr/lib:/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
-16-Feb-2025 23:55:50.384 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
-16-Feb-2025 23:55:50.403 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [362] milliseconds
-16-Feb-2025 23:55:50.454 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
-16-Feb-2025 23:55:50.454 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.0.10]
-16-Feb-2025 23:55:50.459 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/host-manager]
-16-Feb-2025 23:55:50.587 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-16-Feb-2025 23:55:50.614 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/host-manager] has finished in [155] ms
-16-Feb-2025 23:55:50.615 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/ROOT]
-16-Feb-2025 23:55:50.644 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-16-Feb-2025 23:55:50.645 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/ROOT] has finished in [30] ms
-16-Feb-2025 23:55:50.646 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/my_webapp]
-16-Feb-2025 23:55:50.688 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-16-Feb-2025 23:55:50.696 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/my_webapp] has finished in [51] ms
-16-Feb-2025 23:55:50.697 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/manager]
-16-Feb-2025 23:55:50.726 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-16-Feb-2025 23:55:50.728 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/manager] has finished in [31] ms
-16-Feb-2025 23:55:50.729 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/docs]
-16-Feb-2025 23:55:50.744 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-16-Feb-2025 23:55:50.746 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/docs] has finished in [17] ms
-16-Feb-2025 23:55:50.746 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/examples]
-16-Feb-2025 23:55:50.882 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-16-Feb-2025 23:55:50.895 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/examples] has finished in [149] ms
-16-Feb-2025 23:55:50.899 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
-16-Feb-2025 23:55:50.986 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [582] milliseconds
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 17-Feb-2025 00:12:35.817 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
 17-Feb-2025 00:12:35.861 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
 17-Feb-2025 00:12:35.914 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
@@ -1128,7 +490,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 17-Feb-2025 00:14:17.492 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 17-Feb-2025 00:14:17.502 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 17-Feb-2025 00:14:18.152 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.0.10
 17-Feb-2025 00:14:18.171 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 30 2021 09:51:27 UTC
 17-Feb-2025 00:14:18.172 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.0.10.0
@@ -1400,7 +761,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 17-Feb-2025 00:15:05.483 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 17-Feb-2025 00:15:05.501 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 17-Feb-2025 00:15:06.582 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.0.10
 17-Feb-2025 00:15:06.599 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 30 2021 09:51:27 UTC
 17-Feb-2025 00:15:06.600 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.0.10.0
@@ -1672,7 +1032,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 17-Feb-2025 00:15:47.471 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 17-Feb-2025 00:15:47.495 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 17-Feb-2025 00:15:48.117 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.0.10
 17-Feb-2025 00:15:48.121 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 30 2021 09:51:27 UTC
 17-Feb-2025 00:15:48.122 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.0.10.0
@@ -1944,7 +1303,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 17-Feb-2025 00:16:13.999 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 17-Feb-2025 00:16:14.025 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 17-Feb-2025 00:16:14.453 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.0.10
 17-Feb-2025 00:16:14.463 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 30 2021 09:51:27 UTC
 17-Feb-2025 00:16:14.463 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.0.10.0
@@ -2216,7 +1574,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 17-Feb-2025 00:17:02.789 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 17-Feb-2025 00:17:02.821 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 17-Feb-2025 00:17:03.383 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.0.10
 17-Feb-2025 00:17:03.391 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 30 2021 09:51:27 UTC
 17-Feb-2025 00:17:03.391 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.0.10.0
@@ -2488,7 +1845,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 17-Feb-2025 00:18:19.641 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 17-Feb-2025 00:18:19.702 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 17-Feb-2025 00:18:20.871 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.0.10
 17-Feb-2025 00:18:20.881 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 30 2021 09:51:27 UTC
 17-Feb-2025 00:18:20.881 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.0.10.0
@@ -2760,7 +2116,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 17-Feb-2025 00:18:42.075 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 17-Feb-2025 00:18:42.114 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 17-Feb-2025 00:18:42.669 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.0.10
 17-Feb-2025 00:18:42.683 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 30 2021 09:51:27 UTC
 17-Feb-2025 00:18:42.683 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.0.10.0
@@ -3032,7 +2387,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 17-Feb-2025 00:18:59.465 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 17-Feb-2025 00:18:59.513 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 17-Feb-2025 00:19:00.485 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.0.10
 17-Feb-2025 00:19:00.514 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 30 2021 09:51:27 UTC
 17-Feb-2025 00:19:00.515 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.0.10.0
@@ -3083,134 +2437,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 17-Feb-2025 00:19:02.183 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/examples] has finished in [276] ms
 17-Feb-2025 00:19:02.187 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
 17-Feb-2025 00:19:02.219 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [996] milliseconds
-java.io.FileNotFoundException: /home/pozidriv/Dropbox/UPC/FIB/Proyect de Tecnologias de la informacion (PTI)/Lab1-Tomcat-y-JSON/apache-tomcat-9.0.5/webapps/my_webapp/WEB-INF/classes/mypackage/car-rental.json (No such file or directory)
-	at java.base/java.io.FileOutputStream.open0(Native Method)
-	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
-	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
-	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:126)
-	at java.base/java.io.FileWriter.<init>(FileWriter.java:66)
-	at mypackage.CarRentalNew.CreateJson(CarRentalNew.java:72)
-	at mypackage.CarRentalNew.doGet(CarRentalNew.java:106)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:665)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:774)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:543)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:353)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1699)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:829)
-java.io.FileNotFoundException: /home/pozidriv/Dropbox/UPC/FIB/Proyect de Tecnologias de la informacion (PTI)/Lab1-Tomcat-y-JSON/apache-tomcat-9.0.5/webapps/my_webapp/WEB-INF/classes/mypackage/car-rental.json (No such file or directory)
-	at java.base/java.io.FileOutputStream.open0(Native Method)
-	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
-	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
-	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:126)
-	at java.base/java.io.FileWriter.<init>(FileWriter.java:66)
-	at mypackage.CarRentalNew.CreateJson(CarRentalNew.java:72)
-	at mypackage.CarRentalNew.doGet(CarRentalNew.java:106)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:665)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:774)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:543)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:353)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1699)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:829)
-java.io.FileNotFoundException: /home/pozidriv/Dropbox/UPC/FIB/Proyect de Tecnologias de la informacion (PTI)/Lab1-Tomcat-y-JSON/apache-tomcat-9.0.5/webapps/my_webapp/WEB-INF/classes/mypackage/car-rental.json (No such file or directory)
-	at java.base/java.io.FileOutputStream.open0(Native Method)
-	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
-	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
-	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:126)
-	at java.base/java.io.FileWriter.<init>(FileWriter.java:66)
-	at mypackage.CarRentalNew.CreateJson(CarRentalNew.java:72)
-	at mypackage.CarRentalNew.doGet(CarRentalNew.java:106)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:665)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:774)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:543)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:353)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1699)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:829)
-java.io.FileNotFoundException: /home/pozidriv/Dropbox/UPC/FIB/Proyect de Tecnologias de la informacion (PTI)/Lab1-Tomcat-y-JSON/apache-tomcat-9.0.5/webapps/my_webapp/WEB-INF/classes/mypackage/car-rental.json (No such file or directory)
-	at java.base/java.io.FileOutputStream.open0(Native Method)
-	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
-	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
-	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:126)
-	at java.base/java.io.FileWriter.<init>(FileWriter.java:66)
-	at mypackage.CarRentalNew.CreateJson(CarRentalNew.java:72)
-	at mypackage.CarRentalNew.doGet(CarRentalNew.java:106)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:665)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:774)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:543)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:353)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1699)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:829)
 17-Feb-2025 00:20:27.929 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
 17-Feb-2025 00:20:27.931 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
 17-Feb-2025 00:20:27.951 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
@@ -3432,7 +2658,6 @@ java.io.FileNotFoundException: /home/pozidriv/Dropbox/UPC/FIB/Proyect de Tecnolo
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 17-Feb-2025 00:20:28.074 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 17-Feb-2025 00:20:28.118 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 17-Feb-2025 00:20:28.845 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.0.10
 17-Feb-2025 00:20:28.849 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 30 2021 09:51:27 UTC
 17-Feb-2025 00:20:28.850 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.0.10.0
@@ -3483,38 +2708,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 17-Feb-2025 00:20:29.854 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/examples] has finished in [240] ms
 17-Feb-2025 00:20:29.859 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
 17-Feb-2025 00:20:29.868 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [656] milliseconds
-java.io.FileNotFoundException: /home/pozidriv/Dropbox/UPC/FIB/Proyect de Tecnologias de la informacion (PTI)/Lab1-Tomcat-y-JSON/apache-tomcat-9.0.5/webapps/my_webapp/WEB-INF/classes/mypackage/car-rental.json (No such file or directory)
-	at java.base/java.io.FileOutputStream.open0(Native Method)
-	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
-	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
-	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:126)
-	at java.base/java.io.FileWriter.<init>(FileWriter.java:66)
-	at mypackage.CarRentalNew.CreateJson(CarRentalNew.java:72)
-	at mypackage.CarRentalNew.doGet(CarRentalNew.java:106)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:665)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:774)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:543)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:353)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1699)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:829)
 17-Feb-2025 00:23:22.217 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
 17-Feb-2025 00:23:22.221 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
 17-Feb-2025 00:23:22.228 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
@@ -3736,7 +2929,6 @@ java.io.FileNotFoundException: /home/pozidriv/Dropbox/UPC/FIB/Proyect de Tecnolo
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 17-Feb-2025 00:23:22.269 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 17-Feb-2025 00:23:22.288 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 17-Feb-2025 00:23:22.807 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.0.10
 17-Feb-2025 00:23:22.848 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 30 2021 09:51:27 UTC
 17-Feb-2025 00:23:22.848 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.0.10.0
@@ -3787,38 +2979,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 17-Feb-2025 00:23:25.265 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/examples] has finished in [369] ms
 17-Feb-2025 00:23:25.297 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
 17-Feb-2025 00:23:25.310 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1345] milliseconds
-java.io.FileNotFoundException: /home/pozidriv/Dropbox/UPC/FIB/Proyect de Tecnologias de la informacion (PTI)/Lab1-Tomcat-y-JSON/apache-tomcat-9.0.5/webapps/my_webapp/WEB-INF/classes/mypackage/car-rental.json (No such file or directory)
-	at java.base/java.io.FileOutputStream.open0(Native Method)
-	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
-	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
-	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:126)
-	at java.base/java.io.FileWriter.<init>(FileWriter.java:66)
-	at mypackage.CarRentalNew.CreateJson(CarRentalNew.java:72)
-	at mypackage.CarRentalNew.doGet(CarRentalNew.java:123)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:665)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:774)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:543)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:353)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1699)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:829)
 17-Feb-2025 00:32:32.974 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
 17-Feb-2025 00:32:32.978 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
 17-Feb-2025 00:32:32.986 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
@@ -4040,7 +3200,6 @@ java.io.FileNotFoundException: /home/pozidriv/Dropbox/UPC/FIB/Proyect de Tecnolo
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 17-Feb-2025 00:32:33.078 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 17-Feb-2025 00:32:33.094 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 17-Feb-2025 00:32:33.695 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.0.10
 17-Feb-2025 00:32:33.698 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 30 2021 09:51:27 UTC
 17-Feb-2025 00:32:33.698 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.0.10.0
@@ -4312,7 +3471,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 17-Feb-2025 00:33:08.732 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 17-Feb-2025 00:33:08.775 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 17-Feb-2025 00:33:09.346 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.0.10
 17-Feb-2025 00:33:09.351 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 30 2021 09:51:27 UTC
 17-Feb-2025 00:33:09.352 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.0.10.0
@@ -4363,166 +3521,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 17-Feb-2025 00:33:10.665 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/examples] has finished in [397] ms
 17-Feb-2025 00:33:10.680 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
 17-Feb-2025 00:33:10.699 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [899] milliseconds
-java.io.FileNotFoundException: /home/pozidriv/Dropbox/UPC/FIB/Proyect de Tecnologias de la informacion (PTI)/Lab1-Tomcat-y-JSON/apache-tomcat-9.0.5/webapps/my_webapp/WEB-INF/classes/mypackage/car-rental.json (No such file or directory)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
-	at java.base/java.io.FileReader.<init>(FileReader.java:60)
-	at mypackage.CarRentalNew.CreateJson(CarRentalNew.java:83)
-	at mypackage.CarRentalNew.doGet(CarRentalNew.java:157)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:665)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:774)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:543)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:353)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1699)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:829)
-java.io.FileNotFoundException: /home/pozidriv/Dropbox/UPC/FIB/Proyect de Tecnologias de la informacion (PTI)/Lab1-Tomcat-y-JSON/apache-tomcat-9.0.5/webapps/my_webapp/WEB-INF/classes/mypackage/car-rental.json (No such file or directory)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
-	at java.base/java.io.FileReader.<init>(FileReader.java:60)
-	at mypackage.CarRentalNew.CreateJson(CarRentalNew.java:83)
-	at mypackage.CarRentalNew.doGet(CarRentalNew.java:157)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:665)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:774)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:543)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:353)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1699)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:829)
-java.io.FileNotFoundException: /home/pozidriv/Dropbox/UPC/FIB/Proyect de Tecnologias de la informacion (PTI)/Lab1-Tomcat-y-JSON/apache-tomcat-9.0.5/webapps/my_webapp/WEB-INF/classes/mypackage/car-rental.json (No such file or directory)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
-	at java.base/java.io.FileReader.<init>(FileReader.java:60)
-	at mypackage.CarRentalNew.CreateJson(CarRentalNew.java:83)
-	at mypackage.CarRentalNew.doGet(CarRentalNew.java:157)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:665)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:774)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:543)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:353)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1699)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:829)
-java.io.FileNotFoundException: /home/pozidriv/Dropbox/UPC/FIB/Proyect de Tecnologias de la informacion (PTI)/Lab1-Tomcat-y-JSON/apache-tomcat-9.0.5/webapps/my_webapp/WEB-INF/classes/mypackage/car-rental.json (No such file or directory)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
-	at java.base/java.io.FileReader.<init>(FileReader.java:60)
-	at mypackage.CarRentalNew.CreateJson(CarRentalNew.java:83)
-	at mypackage.CarRentalNew.doGet(CarRentalNew.java:157)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:665)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:774)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:543)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:353)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1699)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:829)
-java.io.FileNotFoundException: /home/pozidriv/Dropbox/UPC/FIB/Proyect de Tecnologias de la informacion (PTI)/Lab1-Tomcat-y-JSON/apache-tomcat-9.0.5/webapps/my_webapp/WEB-INF/classes/mypackage/car-rental.json (No such file or directory)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
-	at java.base/java.io.FileReader.<init>(FileReader.java:60)
-	at mypackage.CarRentalNew.CreateJson(CarRentalNew.java:83)
-	at mypackage.CarRentalNew.doGet(CarRentalNew.java:157)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:665)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:774)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:543)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:353)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1699)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:829)
 17-Feb-2025 00:37:08.914 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
 17-Feb-2025 00:37:08.917 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
 17-Feb-2025 00:37:08.929 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
@@ -4744,7 +3742,6 @@ java.io.FileNotFoundException: /home/pozidriv/Dropbox/UPC/FIB/Proyect de Tecnolo
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 17-Feb-2025 00:37:09.186 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 17-Feb-2025 00:37:09.223 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 17-Feb-2025 00:37:10.321 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.0.10
 17-Feb-2025 00:37:10.361 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 30 2021 09:51:27 UTC
 17-Feb-2025 00:37:10.376 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.0.10.0
@@ -4795,102 +3792,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 17-Feb-2025 00:37:11.800 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/examples] has finished in [246] ms
 17-Feb-2025 00:37:11.802 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
 17-Feb-2025 00:37:11.818 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [844] milliseconds
-java.io.FileNotFoundException: /home/pozidriv/Dropbox/UPC/FIB/Proyect de Tecnologias de la informacion (PTI)/Lab1-Tomcat-y-JSON/apache-tomcat-9.0.5/webapps/my_webapp/WEB-INF/classes/mypackage/car-rental.json (No such file or directory)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
-	at java.base/java.io.FileReader.<init>(FileReader.java:60)
-	at mypackage.CarRentalNew.CreateJson(CarRentalNew.java:83)
-	at mypackage.CarRentalNew.doGet(CarRentalNew.java:157)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:665)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:774)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:543)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:353)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1699)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:829)
-java.io.FileNotFoundException: /home/pozidriv/Dropbox/UPC/FIB/Proyect de Tecnologias de la informacion (PTI)/Lab1-Tomcat-y-JSON/apache-tomcat-9.0.5/webapps/my_webapp/WEB-INF/classes/mypackage/car-rental.json (No such file or directory)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
-	at java.base/java.io.FileReader.<init>(FileReader.java:60)
-	at mypackage.CarRentalNew.CreateJson(CarRentalNew.java:83)
-	at mypackage.CarRentalNew.doGet(CarRentalNew.java:157)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:665)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:774)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:543)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:353)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1699)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:829)
-java.io.FileNotFoundException: /home/pozidriv/Dropbox/UPC/FIB/Proyect de Tecnologias de la informacion (PTI)/Lab1-Tomcat-y-JSON/apache-tomcat-9.0.5/webapps/my_webapp/WEB-INF/classes/mypackage/car-rental.json (No such file or directory)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
-	at java.base/java.io.FileReader.<init>(FileReader.java:60)
-	at mypackage.CarRentalNew.CreateJson(CarRentalNew.java:83)
-	at mypackage.CarRentalNew.doGet(CarRentalNew.java:157)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:665)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:774)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:543)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:353)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1699)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:829)
 17-Feb-2025 00:39:45.252 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
 17-Feb-2025 00:39:45.273 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
 17-Feb-2025 00:39:45.301 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
@@ -5112,7 +4013,6 @@ java.io.FileNotFoundException: /home/pozidriv/Dropbox/UPC/FIB/Proyect de Tecnolo
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 17-Feb-2025 00:39:45.491 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 17-Feb-2025 00:39:45.539 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 17-Feb-2025 00:39:46.369 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.0.10
 17-Feb-2025 00:39:46.375 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 30 2021 09:51:27 UTC
 17-Feb-2025 00:39:46.375 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.0.10.0
@@ -5384,7 +4284,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 17-Feb-2025 01:12:16.688 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 17-Feb-2025 01:12:16.758 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 17-Feb-2025 01:12:18.298 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.0.10
 17-Feb-2025 01:12:18.312 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 30 2021 09:51:27 UTC
 17-Feb-2025 01:12:18.313 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.0.10.0
@@ -5656,7 +4555,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 17-Feb-2025 01:13:21.469 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 17-Feb-2025 01:13:21.501 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 17-Feb-2025 01:13:22.301 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.0.10
 17-Feb-2025 01:13:22.304 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 30 2021 09:51:27 UTC
 17-Feb-2025 01:13:22.304 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.0.10.0
@@ -5928,7 +4826,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 17-Feb-2025 01:14:23.719 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 17-Feb-2025 01:14:23.783 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 17-Feb-2025 01:14:24.928 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.0.10
 17-Feb-2025 01:14:25.001 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 30 2021 09:51:27 UTC
 17-Feb-2025 01:14:25.002 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.0.10.0
@@ -5979,7 +4876,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 17-Feb-2025 01:14:27.364 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/examples] has finished in [270] ms
 17-Feb-2025 01:14:27.392 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
 17-Feb-2025 01:14:27.412 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1362] milliseconds
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 17-Feb-2025 01:19:37.085 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
 17-Feb-2025 01:19:37.152 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
 17-Feb-2025 01:19:37.181 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.0.10
@@ -6042,6 +4938,7 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 17-Feb-2025 01:19:37.703 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [748] milliseconds
 17-Feb-2025 01:19:37.760 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
 17-Feb-2025 01:19:37.760 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.0.10]
+17-Feb-2025 01:19:37.766 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/host-manager]
 17-Feb-2025 01:19:37.746 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Failed to clear soft references from ObjectStreamClass$Caches for web application [ROOT]
 	java.lang.ClassCastException: class java.io.ObjectStreamClass$Caches$1 cannot be cast to class java.util.Map (java.io.ObjectStreamClass$Caches$1 and java.util.Map are in module java.base of loader 'bootstrap')
 		at org.apache.catalina.loader.WebappClassLoaderBase.clearCache(WebappClassLoaderBase.java:2363)
@@ -6078,7 +4975,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
-17-Feb-2025 01:19:37.766 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/proj/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/host-manager]
 17-Feb-2025 01:19:37.931 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Failed to clear soft references from ObjectStreamClass$Caches for web application [examples]
 	java.lang.ClassCastException: class java.io.ObjectStreamClass$Caches$1 cannot be cast to class java.util.Map (java.io.ObjectStreamClass$Caches$1 and java.util.Map are in module java.base of loader 'bootstrap')
 		at org.apache.catalina.loader.WebappClassLoaderBase.clearCache(WebappClassLoaderBase.java:2363)
@@ -6500,7 +5396,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 17-Feb-2025 01:20:06.659 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 17-Feb-2025 01:20:06.659 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 17-Feb-2025 01:20:07.229 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.0.10
 17-Feb-2025 01:20:07.233 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 30 2021 09:51:27 UTC
 17-Feb-2025 01:20:07.233 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.0.10.0
@@ -6772,7 +5667,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 17-Feb-2025 01:20:48.268 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 17-Feb-2025 01:20:48.315 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 17-Feb-2025 01:20:48.751 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.0.10
 17-Feb-2025 01:20:48.755 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 30 2021 09:51:27 UTC
 17-Feb-2025 01:20:48.755 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.0.10.0
@@ -7044,7 +5938,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 17-Feb-2025 01:22:11.277 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 17-Feb-2025 01:22:11.569 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 17-Feb-2025 01:22:12.284 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.0.10
 17-Feb-2025 01:22:12.367 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 30 2021 09:51:27 UTC
 17-Feb-2025 01:22:12.367 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.0.10.0
@@ -7316,7 +6209,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 17-Feb-2025 01:23:30.323 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 17-Feb-2025 01:23:30.356 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 17-Feb-2025 01:23:31.005 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.0.10
 17-Feb-2025 01:23:31.008 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 30 2021 09:51:27 UTC
 17-Feb-2025 01:23:31.008 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.0.10.0
@@ -7588,7 +6480,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 17-Feb-2025 01:24:58.500 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 17-Feb-2025 01:24:58.547 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 17-Feb-2025 01:24:59.049 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.0.10
 17-Feb-2025 01:24:59.062 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 30 2021 09:51:27 UTC
 17-Feb-2025 01:24:59.062 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.0.10.0
@@ -7859,7 +6750,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 17-Feb-2025 01:36:09.116 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 17-Feb-2025 01:36:09.171 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
 17-Feb-2025 01:36:10.263 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.0.10
 17-Feb-2025 01:36:10.311 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 30 2021 09:51:27 UTC
@@ -8131,7 +7021,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 17-Feb-2025 01:39:40.674 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 17-Feb-2025 01:39:40.737 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
 17-Feb-2025 01:39:41.222 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.0.10
 17-Feb-2025 01:39:41.235 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 30 2021 09:51:27 UTC
@@ -8404,7 +7293,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 17-Feb-2025 01:40:23.408 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 17-Feb-2025 01:40:23.454 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 17-Feb-2025 01:40:23.919 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.0.10
 17-Feb-2025 01:40:23.924 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 30 2021 09:51:27 UTC
 17-Feb-2025 01:40:23.924 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.0.10.0
@@ -8676,7 +7564,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 17-Feb-2025 01:41:50.444 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 17-Feb-2025 01:41:50.484 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 17-Feb-2025 01:41:51.194 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.0.10
 17-Feb-2025 01:41:51.204 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 30 2021 09:51:27 UTC
 17-Feb-2025 01:41:51.204 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.0.10.0

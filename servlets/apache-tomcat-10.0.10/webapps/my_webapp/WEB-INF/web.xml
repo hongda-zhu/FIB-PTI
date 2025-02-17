@@ -1,28 +1,24 @@
-    <web-app>
-        <servlet>
-          <servlet-name>my_servlet</servlet-name>
-          <servlet-class>mypackage.MyServlet</servlet-class>
-        </servlet>
-        <servlet-mapping>
-          <servlet-name>my_servlet</servlet-name>
-          <url-pattern>/my_servlet</url-pattern>
-        </servlet-mapping>
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
 
-        <servlet>
-          <servlet-name>new</servlet-name>
-          <servlet-class>mypackage.CarRentalNew</servlet-class>
-        </servlet>
-        <servlet-mapping>
-          <servlet-name>new</servlet-name>
-          <url-pattern>/new</url-pattern>
-        </servlet-mapping>
-        <servlet>
-          <servlet-name>list</servlet-name>
-          <servlet-class>mypackage.CarRentalList</servlet-class>
-        </servlet>
-        <servlet-mapping>
-          <servlet-name>list</servlet-name>
-          <url-pattern>/list</url-pattern>
-        </servlet-mapping>
-    </web-app>
+    <servlet>
+      <servlet-name>CarRentalNew</servlet-name>
+      <servlet-class>mypackage.CarRentalNew</servlet-class>
+    </servlet>
+    <servlet-mapping>
+      <servlet-name>CarRentalNew</servlet-name>
+      <url-pattern>/new</url-pattern>
+    </servlet-mapping>
+    <servlet>
+      <servlet-name>list</servlet-name>
+      <servlet-class>mypackage.CarRentalList</servlet-class>
+    </servlet>
+    <servlet-mapping>
+      <servlet-name>list</servlet-name>
+      <url-pattern>/list</url-pattern>
+    </servlet-mapping>
+</web-app>
 
