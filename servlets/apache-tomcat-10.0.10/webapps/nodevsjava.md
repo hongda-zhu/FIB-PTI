@@ -1,3 +1,5 @@
+<!-- Add to the report a 1-page explanation of the pros and cons of using Java servlets compared to another alternative, e.g. Node.js. Indicate the source(s) that you used to obtain the content. -->
+
 # Comparativa entre Java Servlets y Node.js
 
 ## Introducción
