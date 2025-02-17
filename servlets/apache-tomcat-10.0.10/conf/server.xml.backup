@@ -103,19 +103,18 @@
     -->
 
     <!-- Añadir el nuevo Connector SSL AQUÍ, dentro del Service -->
-     <Connector protocol="org.apache.coyote.http11.Http11NioProtocol"
-     sslImplementationName="org.apache.tomcat.util.net.jsse.JSSEImplementation"
-     port="8443"
-     maxThreads="150"
-     SSLEnabled="true">
-     <SSLHostConfig>
-          <Certificate
-          certificateKeystoreFile="${user.home}/.keystore"
-          type="RSA"
-          />
-     </SSLHostConfig>
-     </Connector>
-
+    <Connector
+        port="8443"
+        protocol="org.apache.coyote.http11.Http11NioProtocol"
+        maxThreads="150"
+        SSLEnabled="true">
+        <SSLHostConfig>
+            <Certificate
+                certificateKeystoreFile="${user.home}/.keystore"
+                certificateKeystorePassword="changeit"
+                type="RSA"/>
+        </SSLHostConfig>
+    </Connector>
 
     <!-- An Engine represents the entry point (within Catalina) that processes
          every request.  The Engine implementation for Tomcat stand alone
@@ -170,7 +169,7 @@
 <!-- RSA  
 
 Enter keystore password:  
-Re-enter new password: changeit
+Re-enter new password: marina
 What is your first and last name?
   [Unknown]:  unkown
 What is the name of your organizational unit?

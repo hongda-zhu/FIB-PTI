@@ -73,3 +73,20 @@
 127.0.0.1 - - [17/Feb/2025:01:42:14 +0100] "POST /my_webapp/list HTTP/1.1" 200 1237
 127.0.0.1 - - [17/Feb/2025:01:42:21 +0100] "GET /my_webapp/new?co2_rating=139&sub_model_vehicle=Electric&dies_lloguer=1&num_vehicles=1&descompte=0.0&llogar=Submit+%28GET%29 HTTP/1.1" 200 519
 127.0.0.1 - - [17/Feb/2025:01:42:27 +0100] "POST /my_webapp/list HTTP/1.1" 200 1470
+127.0.0.1 - - [17/Feb/2025:01:57:59 +0100] "GET /my_webapp/carrental_form_list.html HTTP/1.1" 304 -
+127.0.0.1 - - [17/Feb/2025:01:58:01 +0100] "POST /my_webapp/list HTTP/1.1" 200 68
+127.0.0.1 - - [17/Feb/2025:01:58:05 +0100] "POST /my_webapp/list HTTP/1.1" 200 68
+127.0.0.1 - - [17/Feb/2025:02:10:17 +0100] "GET /my_webapp/carrental_home.html HTTP/1.1" 200 347
+127.0.0.1 - - [17/Feb/2025:02:10:18 +0100] "GET /favicon.ico HTTP/1.1" 200 21630
+127.0.0.1 - - [17/Feb/2025:02:10:29 +0100] "-" 400 -
+127.0.0.1 - - [17/Feb/2025:02:10:29 +0100] "-" 400 -
+127.0.0.1 - - [17/Feb/2025:02:10:36 +0100] "GET / HTTP/1.1" 200 11163
+127.0.0.1 - - [17/Feb/2025:02:10:36 +0100] "GET /tomcat.css HTTP/1.1" 200 5542
+127.0.0.1 - - [17/Feb/2025:02:10:36 +0100] "GET /tomcat.svg HTTP/1.1" 200 67795
+127.0.0.1 - - [17/Feb/2025:02:10:36 +0100] "GET /bg-nav.png HTTP/1.1" 200 1401
+127.0.0.1 - - [17/Feb/2025:02:10:36 +0100] "GET /bg-upper.png HTTP/1.1" 200 3103
+127.0.0.1 - - [17/Feb/2025:02:10:36 +0100] "GET /asf-logo-wide.svg HTTP/1.1" 200 27235
+127.0.0.1 - - [17/Feb/2025:02:10:36 +0100] "GET /bg-middle.png HTTP/1.1" 200 1918
+127.0.0.1 - - [17/Feb/2025:02:10:36 +0100] "GET /bg-button.png HTTP/1.1" 200 713
+127.0.0.1 - - [17/Feb/2025:02:10:36 +0100] "GET /favicon.ico HTTP/1.1" 200 21630
+127.0.0.1 - - [17/Feb/2025:02:10:51 +0100] "GET /my_webapp/carrental_form_list.html HTTP/1.1" 200 628
