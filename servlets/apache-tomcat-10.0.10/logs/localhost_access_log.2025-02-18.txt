@@ -1,0 +1,12 @@
+127.0.0.1 - - [18/Feb/2025:19:06:21 +0100] "GET /my_webapp/my_servlet HTTP/1.1" 404 776
+127.0.0.1 - - [18/Feb/2025:19:06:21 +0100] "GET /favicon.ico HTTP/1.1" 200 21630
+127.0.0.1 - - [18/Feb/2025:19:06:25 +0100] "GET /my_webapp/ HTTP/1.1" 200 334
+127.0.0.1 - - [18/Feb/2025:19:06:26 +0100] "GET /my_webapp/carrental_form_new.html HTTP/1.1" 200 1559
+127.0.0.1 - - [18/Feb/2025:19:06:28 +0100] "GET /my_webapp/new?co2_rating=54&sub_model_vehicle=Hybrid&dies_lloguer=1&num_vehicles=1&descompte=0.0&llogar=Submit+%28GET%29 HTTP/1.1" 200 521
+127.0.0.1 - - [18/Feb/2025:19:25:36 +0100] "-" 400 2188
+127.0.0.1 - - [18/Feb/2025:19:25:36 +0100] "-" 400 2200
+127.0.0.1 - - [18/Feb/2025:19:25:45 +0100] "GET /my_webapp/ HTTP/1.1" 200 334
+127.0.0.1 - - [18/Feb/2025:19:25:45 +0100] "GET /favicon.ico HTTP/1.1" 200 21630
+127.0.0.1 - - [18/Feb/2025:19:43:43 +0100] "GET /my_webapp/carrental_form_new.html HTTP/1.1" 200 1559
+127.0.0.1 - - [18/Feb/2025:19:43:43 +0100] "GET /favicon.ico HTTP/1.1" 200 21630
+127.0.0.1 - - [18/Feb/2025:19:43:46 +0100] "GET /my_webapp/new?co2_rating=71&sub_model_vehicle=Hybrid&dies_lloguer=1&num_vehicles=1&descompte=0.0&llogar=Submit+%28GET%29 HTTP/1.1" 200 521

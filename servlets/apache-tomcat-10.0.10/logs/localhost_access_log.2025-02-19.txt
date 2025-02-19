@@ -1,0 +1,17 @@
+127.0.0.1 - - [19/Feb/2025:17:47:06 +0100] "-" 400 2226
+127.0.0.1 - - [19/Feb/2025:17:47:06 +0100] "-" 400 2170
+127.0.0.1 - - [19/Feb/2025:17:47:07 +0100] "-" 400 2206
+127.0.0.1 - - [19/Feb/2025:17:47:35 +0100] "-" 400 2192
+127.0.0.1 - - [19/Feb/2025:17:47:53 +0100] "GET /my_webapp/ HTTP/1.1" 200 334
+127.0.0.1 - - [19/Feb/2025:17:47:53 +0100] "GET /favicon.ico HTTP/1.1" 200 21630
+127.0.0.1 - - [19/Feb/2025:17:47:54 +0100] "GET /my_webapp/carrental_form_new.html HTTP/1.1" 200 1559
+127.0.0.1 - - [19/Feb/2025:17:48:02 +0100] "GET /my_webapp/new?co2_rating=54&sub_model_vehicle=Hybrid&dies_lloguer=1&num_vehicles=1&descompte=0.0&llogar=Submit+%28GET%29 HTTP/1.1" 200 521
+127.0.0.1 - - [19/Feb/2025:17:48:15 +0100] "GET /my_webapp/carrental_form_new.html HTTP/1.1" 304 -
+127.0.0.1 - - [19/Feb/2025:17:50:36 +0100] "GET /my_webapp/new?co2_rating=54&sub_model_vehicle=Hybrid&dies_lloguer=1&num_vehicles=1&descompte=0.0&llogar=Submit+%28GET%29 HTTP/1.1" 200 521
+127.0.0.1 - - [19/Feb/2025:17:51:10 +0100] "GET /my_webapp/carrental_home.html HTTP/1.1" 200 347
+127.0.0.1 - - [19/Feb/2025:17:51:11 +0100] "GET /my_webapp/carrental_form_list.html HTTP/1.1" 200 628
+127.0.0.1 - - [19/Feb/2025:17:51:16 +0100] "POST /my_webapp/list HTTP/1.1" 200 68
+127.0.0.1 - - [19/Feb/2025:17:51:26 +0100] "POST /my_webapp/list HTTP/1.1" 200 68
+127.0.0.1 - - [19/Feb/2025:17:52:04 +0100] "GET /my_webapp/new?co2_rating=54&sub_model_vehicle=Hybrid&dies_lloguer=1&num_vehicles=1&descompte=0.0&llogar=Submit+%28GET%29 HTTP/1.1" 200 521
+127.0.0.1 - - [19/Feb/2025:17:53:10 +0100] "GET /my_webapp/new?co2_rating=54&sub_model_vehicle=Hybrid&dies_lloguer=1&num_vehicles=1&descompte=0.0&llogar=Submit+%28GET%29 HTTP/1.1" 200 521
+127.0.0.1 - - [19/Feb/2025:17:54:34 +0100] "POST /my_webapp/list HTTP/1.1" 200 68

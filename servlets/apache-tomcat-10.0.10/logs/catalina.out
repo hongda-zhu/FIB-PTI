@@ -10576,3 +10576,331 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 17-Feb-2025 02:10:14.596 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
 17-Feb-2025 02:10:14.631 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["https-jsse-nio-8443"]
 17-Feb-2025 02:10:14.633 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [847] milliseconds
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+18-Feb-2025 19:06:12.422 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.0.10
+18-Feb-2025 19:06:12.443 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 30 2021 09:51:27 UTC
+18-Feb-2025 19:06:12.444 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.0.10.0
+18-Feb-2025 19:06:12.444 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+18-Feb-2025 19:06:12.444 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.15.0-92-generic
+18-Feb-2025 19:06:12.444 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+18-Feb-2025 19:06:12.445 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
+18-Feb-2025 19:06:12.447 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.21+9-post-Ubuntu-0ubuntu122.04
+18-Feb-2025 19:06:12.448 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
+18-Feb-2025 19:06:12.448 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10
+18-Feb-2025 19:06:12.451 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10
+18-Feb-2025 19:06:12.642 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+18-Feb-2025 19:06:12.643 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+18-Feb-2025 19:06:12.643 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+18-Feb-2025 19:06:12.644 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+18-Feb-2025 19:06:12.644 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+18-Feb-2025 19:06:12.644 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10/conf/logging.properties
+18-Feb-2025 19:06:12.644 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+18-Feb-2025 19:06:12.644 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+18-Feb-2025 19:06:12.646 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+18-Feb-2025 19:06:12.646 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+18-Feb-2025 19:06:12.646 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+18-Feb-2025 19:06:12.647 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10
+18-Feb-2025 19:06:12.647 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10
+18-Feb-2025 19:06:12.647 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10/temp
+18-Feb-2025 19:06:12.676 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/home/alumne/catkin_ws/devel/lib:/opt/ros/noetic/lib:/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+18-Feb-2025 19:06:13.866 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+18-Feb-2025 19:06:13.983 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["https-jsse-nio-8443"]
+18-Feb-2025 19:06:14.992 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector[org.apache.coyote.http11.Http11NioProtocol-8443]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1054)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:556)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1042)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:747)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:769)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:305)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:475)
+	Caused by: java.lang.IllegalArgumentException: /home/alumne/.keystore (No such file or directory)
+		at org.apache.tomcat.util.net.AbstractJsseEndpoint.createSSLContext(AbstractJsseEndpoint.java:99)
+		at org.apache.tomcat.util.net.AbstractJsseEndpoint.initialiseSsl(AbstractJsseEndpoint.java:71)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:202)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1179)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1192)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:580)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:82)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1051)
+		... 13 more
+	Caused by: java.io.FileNotFoundException: /home/alumne/.keystore (No such file or directory)
+		at java.base/java.io.FileInputStream.open0(Native Method)
+		at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+		at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+		at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+		at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+		at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+		at org.apache.catalina.startup.CatalinaBaseConfigurationSource.getResource(CatalinaBaseConfigurationSource.java:118)
+		at org.apache.tomcat.util.net.SSLUtilBase.getStore(SSLUtilBase.java:197)
+		at org.apache.tomcat.util.net.SSLHostConfigCertificate.getCertificateKeystore(SSLHostConfigCertificate.java:207)
+		at org.apache.tomcat.util.net.SSLUtilBase.getKeyManagers(SSLUtilBase.java:281)
+		at org.apache.tomcat.util.net.SSLUtilBase.createSSLContext(SSLUtilBase.java:245)
+		at org.apache.tomcat.util.net.AbstractJsseEndpoint.createSSLContext(AbstractJsseEndpoint.java:97)
+		... 20 more
+18-Feb-2025 19:06:14.995 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [3515] milliseconds
+18-Feb-2025 19:06:15.271 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+18-Feb-2025 19:06:15.272 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.0.10]
+18-Feb-2025 19:06:15.303 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/host-manager]
+18-Feb-2025 19:06:16.202 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+18-Feb-2025 19:06:16.388 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/host-manager] has finished in [1,079] ms
+18-Feb-2025 19:06:16.390 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/ROOT]
+18-Feb-2025 19:06:16.503 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+18-Feb-2025 19:06:16.508 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/ROOT] has finished in [118] ms
+18-Feb-2025 19:06:16.511 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/my_webapp]
+18-Feb-2025 19:06:16.708 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+18-Feb-2025 19:06:16.754 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/my_webapp] has finished in [243] ms
+18-Feb-2025 19:06:16.755 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/manager]
+18-Feb-2025 19:06:16.876 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+18-Feb-2025 19:06:16.891 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/manager] has finished in [135] ms
+18-Feb-2025 19:06:16.891 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/docs]
+18-Feb-2025 19:06:16.976 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+18-Feb-2025 19:06:16.982 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/docs] has finished in [90] ms
+18-Feb-2025 19:06:16.982 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/examples]
+18-Feb-2025 19:06:17.848 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+18-Feb-2025 19:06:17.918 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/examples] has finished in [936] ms
+18-Feb-2025 19:06:17.943 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+18-Feb-2025 19:06:17.996 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [3001] milliseconds
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+18-Feb-2025 19:25:30.512 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.0.10
+18-Feb-2025 19:25:30.516 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 30 2021 09:51:27 UTC
+18-Feb-2025 19:25:30.516 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.0.10.0
+18-Feb-2025 19:25:30.516 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+18-Feb-2025 19:25:30.516 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.15.0-92-generic
+18-Feb-2025 19:25:30.516 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+18-Feb-2025 19:25:30.516 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
+18-Feb-2025 19:25:30.517 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.21+9-post-Ubuntu-0ubuntu122.04
+18-Feb-2025 19:25:30.517 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
+18-Feb-2025 19:25:30.517 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10
+18-Feb-2025 19:25:30.517 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10
+18-Feb-2025 19:25:30.662 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+18-Feb-2025 19:25:30.662 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+18-Feb-2025 19:25:30.663 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+18-Feb-2025 19:25:30.664 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+18-Feb-2025 19:25:30.664 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+18-Feb-2025 19:25:30.664 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10/conf/logging.properties
+18-Feb-2025 19:25:30.664 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+18-Feb-2025 19:25:30.665 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+18-Feb-2025 19:25:30.665 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+18-Feb-2025 19:25:30.665 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+18-Feb-2025 19:25:30.665 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+18-Feb-2025 19:25:30.665 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10
+18-Feb-2025 19:25:30.665 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10
+18-Feb-2025 19:25:30.665 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10/temp
+18-Feb-2025 19:25:30.714 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/home/alumne/catkin_ws/devel/lib:/opt/ros/noetic/lib:/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+18-Feb-2025 19:25:31.309 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+18-Feb-2025 19:25:31.373 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["https-jsse-nio-8443"]
+18-Feb-2025 19:25:31.972 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector[org.apache.coyote.http11.Http11NioProtocol-8443]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1054)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:556)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1042)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:747)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:769)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:305)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:475)
+	Caused by: java.lang.IllegalArgumentException: /home/alumne/.keystore (No such file or directory)
+		at org.apache.tomcat.util.net.AbstractJsseEndpoint.createSSLContext(AbstractJsseEndpoint.java:99)
+		at org.apache.tomcat.util.net.AbstractJsseEndpoint.initialiseSsl(AbstractJsseEndpoint.java:71)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:202)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1179)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1192)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:580)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:82)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1051)
+		... 13 more
+	Caused by: java.io.FileNotFoundException: /home/alumne/.keystore (No such file or directory)
+		at java.base/java.io.FileInputStream.open0(Native Method)
+		at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+		at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+		at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+		at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+		at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+		at org.apache.catalina.startup.CatalinaBaseConfigurationSource.getResource(CatalinaBaseConfigurationSource.java:118)
+		at org.apache.tomcat.util.net.SSLUtilBase.getStore(SSLUtilBase.java:197)
+		at org.apache.tomcat.util.net.SSLHostConfigCertificate.getCertificateKeystore(SSLHostConfigCertificate.java:207)
+		at org.apache.tomcat.util.net.SSLUtilBase.getKeyManagers(SSLUtilBase.java:281)
+		at org.apache.tomcat.util.net.SSLUtilBase.createSSLContext(SSLUtilBase.java:245)
+		at org.apache.tomcat.util.net.AbstractJsseEndpoint.createSSLContext(AbstractJsseEndpoint.java:97)
+		... 20 more
+18-Feb-2025 19:25:31.977 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [2202] milliseconds
+18-Feb-2025 19:25:32.070 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+18-Feb-2025 19:25:32.070 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.0.10]
+18-Feb-2025 19:25:32.093 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/host-manager]
+18-Feb-2025 19:25:32.584 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+18-Feb-2025 19:25:32.659 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/host-manager] has finished in [564] ms
+18-Feb-2025 19:25:32.660 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/ROOT]
+18-Feb-2025 19:25:32.709 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+18-Feb-2025 19:25:32.711 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/ROOT] has finished in [51] ms
+18-Feb-2025 19:25:32.712 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/my_webapp]
+18-Feb-2025 19:25:32.818 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+18-Feb-2025 19:25:32.832 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/my_webapp] has finished in [120] ms
+18-Feb-2025 19:25:32.833 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/manager]
+18-Feb-2025 19:25:32.868 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+18-Feb-2025 19:25:32.870 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/manager] has finished in [37] ms
+18-Feb-2025 19:25:32.871 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/docs]
+18-Feb-2025 19:25:32.894 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+18-Feb-2025 19:25:32.895 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/docs] has finished in [25] ms
+18-Feb-2025 19:25:32.896 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/examples]
+18-Feb-2025 19:25:33.348 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+18-Feb-2025 19:25:33.369 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/examples] has finished in [473] ms
+18-Feb-2025 19:25:33.377 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+18-Feb-2025 19:25:33.405 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1427] milliseconds
+18-Feb-2025 19:25:36.289 INFO [http-nio-8080-exec-2] org.apache.coyote.http11.Http11Processor.service Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+	java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x020x820x010x000x02~0x030x030xeb0xcc0x97T0xe80xf60xca0x020x08x0x8f)^0x96"0x160x88l+;yP3R0xc9&0x8e0xcf0x050xaa0xdf0x96 ]. HTTP method names must be tokens
+		at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:269)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1699)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:829)
+18-Feb-2025 19:25:36.289 INFO [http-nio-8080-exec-1] org.apache.coyote.http11.Http11Processor.service Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+	java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x020x820x010x000x02~0x030x03E)0xe10x1f0xf80x1f0xc6e0x940xb240xf2+80x08;0x860xff0xde0x0b\QB0x9a0x1a0xd20x170xda\0xe250xa8 ]. HTTP method names must be tokens
+		at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:269)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1699)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:829)
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+19-Feb-2025 17:46:30.434 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.0.10
+19-Feb-2025 17:46:30.445 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 30 2021 09:51:27 UTC
+19-Feb-2025 17:46:30.445 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.0.10.0
+19-Feb-2025 17:46:30.446 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+19-Feb-2025 17:46:30.446 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.15.0-92-generic
+19-Feb-2025 17:46:30.446 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+19-Feb-2025 17:46:30.446 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
+19-Feb-2025 17:46:30.446 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.21+9-post-Ubuntu-0ubuntu122.04
+19-Feb-2025 17:46:30.446 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
+19-Feb-2025 17:46:30.446 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10
+19-Feb-2025 17:46:30.447 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10
+19-Feb-2025 17:46:30.490 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+19-Feb-2025 17:46:30.491 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+19-Feb-2025 17:46:30.491 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+19-Feb-2025 17:46:30.491 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+19-Feb-2025 17:46:30.492 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+19-Feb-2025 17:46:30.492 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10/conf/logging.properties
+19-Feb-2025 17:46:30.492 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+19-Feb-2025 17:46:30.492 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+19-Feb-2025 17:46:30.492 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+19-Feb-2025 17:46:30.492 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+19-Feb-2025 17:46:30.492 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+19-Feb-2025 17:46:30.492 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10
+19-Feb-2025 17:46:30.493 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10
+19-Feb-2025 17:46:30.493 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10/temp
+19-Feb-2025 17:46:30.517 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/home/alumne/catkin_ws/devel/lib:/opt/ros/noetic/lib:/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+19-Feb-2025 17:46:31.008 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 17:46:31.077 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["https-jsse-nio-8443"]
+19-Feb-2025 17:46:31.792 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector[org.apache.coyote.http11.Http11NioProtocol-8443]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1054)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:556)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1042)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:747)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:769)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:305)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:475)
+	Caused by: java.lang.IllegalArgumentException: /home/alumne/.keystore (No such file or directory)
+		at org.apache.tomcat.util.net.AbstractJsseEndpoint.createSSLContext(AbstractJsseEndpoint.java:99)
+		at org.apache.tomcat.util.net.AbstractJsseEndpoint.initialiseSsl(AbstractJsseEndpoint.java:71)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:202)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1179)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1192)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:580)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:82)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1051)
+		... 13 more
+	Caused by: java.io.FileNotFoundException: /home/alumne/.keystore (No such file or directory)
+		at java.base/java.io.FileInputStream.open0(Native Method)
+		at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+		at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+		at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+		at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+		at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+		at org.apache.catalina.startup.CatalinaBaseConfigurationSource.getResource(CatalinaBaseConfigurationSource.java:118)
+		at org.apache.tomcat.util.net.SSLUtilBase.getStore(SSLUtilBase.java:197)
+		at org.apache.tomcat.util.net.SSLHostConfigCertificate.getCertificateKeystore(SSLHostConfigCertificate.java:207)
+		at org.apache.tomcat.util.net.SSLUtilBase.getKeyManagers(SSLUtilBase.java:281)
+		at org.apache.tomcat.util.net.SSLUtilBase.createSSLContext(SSLUtilBase.java:245)
+		at org.apache.tomcat.util.net.AbstractJsseEndpoint.createSSLContext(AbstractJsseEndpoint.java:97)
+		... 20 more
+19-Feb-2025 17:46:31.795 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [2120] milliseconds
+19-Feb-2025 17:46:31.946 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+19-Feb-2025 17:46:31.947 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.0.10]
+19-Feb-2025 17:46:31.970 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/host-manager]
+19-Feb-2025 17:46:32.379 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+19-Feb-2025 17:46:32.458 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/host-manager] has finished in [486] ms
+19-Feb-2025 17:46:32.458 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/ROOT]
+19-Feb-2025 17:46:32.489 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+19-Feb-2025 17:46:32.492 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/ROOT] has finished in [33] ms
+19-Feb-2025 17:46:32.492 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/my_webapp]
+19-Feb-2025 17:46:32.546 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+19-Feb-2025 17:46:32.557 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/my_webapp] has finished in [65] ms
+19-Feb-2025 17:46:32.558 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/manager]
+19-Feb-2025 17:46:32.593 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+19-Feb-2025 17:46:32.596 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/manager] has finished in [38] ms
+19-Feb-2025 17:46:32.596 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/docs]
+19-Feb-2025 17:46:32.625 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+19-Feb-2025 17:46:32.626 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/docs] has finished in [30] ms
+19-Feb-2025 17:46:32.627 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/examples]
+19-Feb-2025 17:46:33.081 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+19-Feb-2025 17:46:33.098 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/Documents/FIB-PTI/servlets/apache-tomcat-10.0.10/webapps/examples] has finished in [471] ms
+19-Feb-2025 17:46:33.107 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 17:46:33.120 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1324] milliseconds
+19-Feb-2025 17:47:06.380 INFO [http-nio-8080-exec-2] org.apache.coyote.http11.Http11Processor.service Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+	java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x020x820x010x000x02~0x030x03t{0xa4g0x820xcb;cAD0xd10xf7q0x1d40xb690x8a_0xc4~0xeb0x81#+>0x060xd40x880xf3q0x03 ]. HTTP method names must be tokens
+		at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:269)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1699)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:829)
+19-Feb-2025 17:47:06.380 INFO [http-nio-8080-exec-1] org.apache.coyote.http11.Http11Processor.service Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+	java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x020x820x010x000x02~0x030x030xdb0xe70x18{0x160xf90xe40x8f0xef0x920x040x8a/0xb60xea?a0x990x87D0xa80x110xe4j0xfc0xf80xb10x140xfd0x90P0xb4 ]. HTTP method names must be tokens
+		at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:269)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1699)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:829)
