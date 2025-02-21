@@ -267,6 +267,45 @@ def list_nodes():
         'nodes': list(blockchain.nodes),
     }
     return jsonify(response), 200
+
+#------------------------------------------------------------------------------
+
+# curl http://localhost:5001/validate
+
+@app.route('/validate', methods=['GET'])
+def validate():
+    """
+    Validate the current blockchain
+    """
+    is_valid = blockchain.valid_chain(blockchain.chain)
+    
+    response = {
+        'valid': is_valid,
+        'chain': blockchain.chain
+    }
+    
+    return jsonify(response), 200
+
+#------------------------------------------------------------------------------
+
+# curl -X POST http://localhost:5001/nodes/manipulate
+
+@app.route('/nodes/manipulate', methods=['POST'])
+def manipulate_chain():
+    """
+    Deliberately manipulate the chain to make it invalid
+    """
+    if len(blockchain.chain) < 2:
+        return jsonify({'message': 'Chain too short to manipulate'}), 400
+    
+    blockchain.chain[1]['previous_hash'] = 'manipulated_hash'
+    
+    response = {
+        'message': 'Chain has been manipulated',
+        'manipulated_block': blockchain.chain[1]
+    }
+    
+    return jsonify(response), 200
     
 #------------------------------------------------------------------------------
 
