@@ -3,6 +3,7 @@ import json
 from time import time
 from urllib.parse import urlparse
 from uuid import uuid4
+import random
 
 import requests
 from flask import Flask, jsonify, request
@@ -106,6 +107,9 @@ class Blockchain:
         :return: New Block
         """
 
+        # 2.4.1 proof of work
+        selected_node = self.proof_of_stake()
+
         block = {
             'index': len(self.chain) + 1,
             'timestamp': time(),
@@ -193,6 +197,21 @@ class Blockchain:
         guess = f'{last_proof}{proof}{last_hash}'.encode()
         guess_hash = hashlib.sha256(guess).hexdigest()
         return guess_hash[:4] == "0000"
+
+    # 2.4.1 alternative of proof of work
+    def proof_of_stake(self):
+        """
+        Simple Proof of Stake Algorithm:
+        Select a random node based on their stake to create a new block.
+        """
+        total_stake = sum(node['stake'] for node in self.nodes)
+        random_value = random.uniform(0, total_stake)
+        current_sum = 0
+
+        for node in self.nodes:
+            current_sum += node['stake']
+            if current_sum >= random_value:
+                return node  # return the selected node 
 
 
 # Instantiate the Node

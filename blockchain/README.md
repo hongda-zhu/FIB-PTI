@@ -64,8 +64,8 @@ When these steps work correctly, we will finally add a few more funtions to the 
 
     #Run the two nodes
     pkill python
-    python blockchain.py -p 5000 &
-    python blockchain.py -p 5001 &
+    python3 blockchain.py -p 5000 &
+    python3 blockchain.py -p 5001 &
 
     sleep 3
 
