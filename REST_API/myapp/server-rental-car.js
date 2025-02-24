@@ -32,17 +32,17 @@ if (!fs.existsSync(filepath)) {
     fs.writeFileSync(filepath, JSON.stringify(defaultRentals));
 }
 
-// Endpoint para procesar el formulario (GET)
-app.get('/new', (req, res) => {
+// 1) Endpoint para procesar el formulario (post)
+app.post('/new', (req, res) => {
     const rentalsFileRawData = fs.readFileSync(filepath);
     const rentalsJSON = JSON.parse(rentalsFileRawData);
 
     // Mapear los campos del formulario a la estructura deseada
     const newRental = {
-        engine: req.query.sub_model_vehicle,
-        num_vehi: req.query.num_vehicles,
-        descuento: req.query.descompte,
-        dias_alquiler: req.query.dies_lloguer
+        engine: req.body.sub_model_vehicle,
+        num_vehi: req.body.num_vehicles,
+        descuento: req.body.descompte,
+        dias_alquiler: req.body.dies_lloguer
     };
 
     // Agregar el nuevo alquiler
@@ -54,12 +54,16 @@ app.get('/new', (req, res) => {
     res.status(201).send('Rental added successfully!');
 });
 
-// Endpoint para listar todos los alquileres
+// 2) Endpoint para listar todos los alquileres
 app.get('/rentals', (req, res) => {
     const rentalsFileRawData = fs.readFileSync(filepath);
     const rentalsJSON = JSON.parse(rentalsFileRawData);
     res.json(rentalsJSON);
 });
+
+/* 
+curl http://localhost:8000/rentals
+*/
 
 // Servir archivos estáticos (HTML)
 app.use(express.static('public'));
@@ -68,5 +72,15 @@ app.listen(port, () => {
     console.log(`Car Rental API listening at http://localhost:${port}`);
 });
 
-// endpoint 1:  curl http://localhost:8000/rentals
-// endpoint 2:  curl "http://localhost:8000/new?sub_model_vehicle=Hybrid&num_vehicles=1&descompte=10&dies_lloguer=2"
+/* 
+Endpoint 1:
+curl -X POST -H "Content-Type: application/json" -d '{
+    "sub_model_vehicle":"Hybrid",
+    "num_vehicles":"1",
+    "descompte":"10",
+    "dies_lloguer":"2"
+}' http://localhost:8000/new
+
+Endpoint 2:
+curl http://localhost:8000/rentals
+*/
