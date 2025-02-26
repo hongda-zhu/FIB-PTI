@@ -1,0 +1,16 @@
+{
+    "rentals": [
+        {
+            "engine": "Hybrid",
+            "num_vehi": "1",
+            "descuento": "12",
+            "dias_alquiler": "1"
+        },
+        {
+            "engine": "Electric",
+            "num_vehi": "2",
+            "descuento": "23",
+            "dias_alquiler": "3"
+        }
+    ]
+}
